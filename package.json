@@ -1,20 +1,21 @@
 {
-  "name": "keyboards-skill",
-  "version": "1.0.0",
-  "description": "Douyin (抖音) 长尾词挖掘引擎",
+  "name": "douyin-longtail-keywords",
+  "version": "2.0.0",
+  "description": "抖音搜索下拉联想长尾词挖掘引擎 — 探针穷举 + 接口监听 + 词库导出",
   "type": "module",
+  "private": true,
+  "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "miner": "node scripts/miner.mjs",
-    "setup": "npm install && npx playwright install chromium"
+    "miner": "node scripts/miner.mjs"
   },
   "dependencies": {
+    "playwright": "^1.60.0"
+  },
+  "optionalDependencies": {
     "better-sqlite3": "^12.10.0",
-    "playwright": "^1.60.0",
-    "playwright-extra": "^4.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "xlsx": "^0.18.5"
+    "exceljs": "^4.4.0"
   }
 }
